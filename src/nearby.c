@@ -50,7 +50,9 @@ void nearby_select_click_callback(MenuLayer *menu_layer, MenuIndex *cell_index, 
 void nearby_window_load(Window *window)
 {
   //Create it - 12 is approx height of the top bar
-  menu_layer = menu_layer_create(GRect(0, 0, 144, 168 - 16));
+  Layer *window_layer = window_get_root_layer(window);
+  GRect bounds = layer_get_bounds(window_layer);
+  menu_layer = menu_layer_create(bounds);
 
   //Let it receive clicks
   menu_layer_set_click_config_onto_window(menu_layer, window);
