@@ -10,15 +10,18 @@
         "configurable"
     ],
     "companyName": "Ashish Agrawal",
+    "enableMultiJS": false,
     "longName": "Pebble CUMTD",
     "projectType": "native",
     "resources": {
         "media": []
     },
-    "sdkVersion": "2",
+    "sdkVersion": "3",
     "shortName": "CUMTD",
+    "targetPlatforms": [
+        "chalk"
+    ],
     "uuid": "0e2309f1-0773-4c0d-b23e-dfeab2be8477",
-    "versionCode": 1,
     "versionLabel": "1.0",
     "watchapp": {
         "watchface": false
